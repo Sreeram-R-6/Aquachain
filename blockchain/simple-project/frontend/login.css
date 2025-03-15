@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #001f3f, #005f99);
+    overflow: hidden;
+    animation: gradientMove 8s infinite alternate ease-in-out;
+}
+
+/* Background animation */
+@keyframes gradientMove {
+    0% { background: linear-gradient(135deg, #001f3f, #005f99); }
+    100% { background: linear-gradient(135deg, #003366, #0077cc); }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 230, 255, 0.2);
+    width: 380px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.toggle-buttons button.active {
+    border-bottom: 3px solid #00e6ff;
+    color: #00e6ff;
+}
+
+/* Floating Input Fields */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #00e6ff;
+    box-shadow: 0px 0px 10px rgba(0, 230, 255, 0.5);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: #00e6ff;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00e6ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 230, 255, 0.5);
+}
+
+button:hover {
+    background: #004e92;
+    transform: scale(1.05);
+}
+
+/* Text */
+p {
+    color: white;
+    margin-top: 10px;
+}
+
+p span {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+p span:hover {
+    text-decoration: underline;
+    color: #00e6ff;
+}
+
+/* Smooth Form Switching */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Particle Animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Small Bubbles for Effect */
+body::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 230, 255, 0.1);
+    top: 10%;
+    left: 15%;
+    border-radius: 50%;
+    filter: blur(50px);
+    animation: floating 6s infinite ease-in-out;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 230, 255, 0.1);
+    bottom: 10%;
+    right: 15%;
+    border-radius: 50%;
+    filter: blur(50px);
+    animation: floating 6s infinite ease-in-out alternate;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #001f3f, #005f99, #0088cc);
+    animation: softWaves 30s infinite alternate ease-in-out;
+}
+
+/* ✨ Soft & Slow Color Transition */
+@keyframes softWaves {
+    0%   { background: linear-gradient(135deg, #001f3f, #005f99, #0088cc); }
+    25%  { background: linear-gradient(135deg, #002b5e, #0077cc, #00aaff); }
+    50%  { background: linear-gradient(135deg, #001f3f, #006fb2, #0099dd); }
+    75%  { background: linear-gradient(135deg, #003366, #0088cc, #00bbee); }
+    100% { background: linear-gradient(135deg, #001f3f, #005f99, #0088cc); }
+}
+
+/* Smooth Glassmorphism Effect */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 230, 255, 0.3);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, background 1s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Smooth Button Hover Effect */
+button {
+    background: #00e6ff;
+    transition: background 0.8s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #004e92;
+    transform: scale(1.05);
+}

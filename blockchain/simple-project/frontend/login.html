@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquachain Login & Signup</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <!-- Toggle Buttons -->
+            <div class="toggle-buttons">
+                <button id="loginBtn" class="active" onclick="showLogin()">Sign In</button>
+                <button id="registerBtn" onclick="showRegister()">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <span onclick="showRegister()">Sign up</span></p>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register-form" class="hidden">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Register</button>
+                <p>Already have an account? <span onclick="showLogin()">Sign in</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById("login-form").classList.remove("hidden");
+            document.getElementById("register-form").classList.add("hidden");
+            document.getElementById("loginBtn").classList.add("active");
+            document.getElementById("registerBtn").classList.remove("active");
+        }
+
+        function showRegister() {
+            document.getElementById("register-form").classList.remove("hidden");
+            document.getElementById("login-form").classList.add("hidden");
+            document.getElementById("registerBtn").classList.add("active");
+            document.getElementById("loginBtn").classList.remove("active");
+        }
+    </script>
+
+</body>
+</html

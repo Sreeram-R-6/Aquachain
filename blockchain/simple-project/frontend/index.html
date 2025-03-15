@@ -3,17 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Frontend</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aquachain Website</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Send Data to Blockchain</h1>
-    <form id="data-form">
-        <label for="data">Data:</label>
-        <input type="text" id="data" name="data" required>
-        <button type="submit">Send</button>
-    </form>
-    <div id="result"></div>
-    <script src="app.js"></script>
+
+    <header>
+        <nav>
+            <div class="logo">Aquachain</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Aqua Chain</h1>
+            <p></p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Service</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Marine Data</h3>
+                <p>Utilizing AI to analyze ocean pollution patterns,enabling smarter and more effictive cleanup stratergies.</p>
+            </div>
+            <a href="data.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card">
+                    <h3>Fish Data & Quality</h3>
+                    <p>AI-driven fish tracking to monitor species health, migration patterns, and predict<br> fish freshness to prevent seafood fraud and overfishing.</p>
+                </div>
+            </a>
+            
+            <div class="service-card">
+                <h3>Ocean Health System</h3>
+                <p>AI-powered monitoring of water quality,coral reef vitality and mairine biodiversity to maintain a sustainable ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>About Us</h2>
+        <div class="testimonial">
+            <p>Our solution leverages blockchain technology to create a tamper-proof tracking system that records catch details such as species,weight,and GPS location in real time.This ensures compliance with fishing regulation,provides verified transparency for consumers and enables governments to efficiently monitor and enforce policies,promoting a more sustainable and ethical seafood industry.</p>
+        </div>
+        <div class="testimonial">
+            <p>Illegal trawling and overfishing threatan marine ecosystems,disrupt economies<br>and reduce consumer trust in seafood sustainability.Current system lack transparency,making it difficult to verify whether fish are legally caught,<br>sustainably sourced and safe for consumption.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aquachain. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

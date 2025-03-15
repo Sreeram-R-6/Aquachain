@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Batch Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="batches">
+        <h2>Fish Batch Data</h2>
+        <div class="batch-container">
+            <div class="batch-card restricted">
+                <h3>Batch #1023</h3>
+                <p><strong>Date:</strong> 2025-03-10</p>
+                <p><strong>Time:</strong> 14:30</p>
+                <p><strong>Location:</strong> Pacific Ocean (Restricted)</p>
+            </div>
+            <div class="batch-card">
+                <h3>Batch #1024</h3>
+                <p><strong>Date:</strong> 2025-03-11</p>
+                <p><strong>Time:</strong> 09:45</p>
+                <p><strong>Location:</strong> Atlantic Ocean</p>
+            </div>
+            <div class="batch-card">
+                <h3>Batch #1025</h3>
+                <p><strong>Date:</strong> 2025-03-12</p>
+                <p><strong>Time:</strong> 18:10</p>
+                <p><strong>Location:</strong> Indian Ocean</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sustainable Fishing Initiative</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #001f3f, #005f99);
+        color: white;
+        text-align: center;
+    }
+    #batches {
+        padding: 80px 20px;
+        margin-top: 100px;
+    }
+    .batch-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .batch-card {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 25px;
+        border-radius: 15px;
+        width: 300px;
+        box-shadow: 0px 5px 15px rgba(0, 230, 255, 0.3);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .batch-card.restricted {
+        border: 2px solid red;
+        box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
+    }
+    .batch-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 230, 255, 0.5);
+    }
+    h2 {
+        font-size: 40px;
+        color: #00e6ff;
+        margin-bottom: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #002244;
+        color: white;
+        font-size: 16px;
+    }
+</style>
