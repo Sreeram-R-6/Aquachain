@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Data & Quality - Aquachain</title>
+
+    <!-- Google Font Poppins -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #001f3f, #005f99);
+            color: white;
+            height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Bar */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 50px;
+            background: rgba(0, 0, 50, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 50, 0.5);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00e6ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #00e6ff;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: #00e6ff;
+        }
+
+        /* Services Section */
+        #services {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin-top: 80px;  /* Adjusted to provide spacing from the fixed nav */
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        #services h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #00e6ff;
+        }
+
+        .batch-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .batch-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 230, 255, 0.3);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .batch-card h4 {
+            font-size: 20px;
+            color: #00e6ff;
+            margin-bottom: 10px;
+        }
+
+        .batch-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            color: rgb(146, 200, 146);
+        }
+
+        .status.restricted {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #002244;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Aquachain</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Fish Data & Quality</h2>
+        
+        <!-- Recently Caught Batches with cards -->
+        <h4>Recently Caught Batches</h4>
+        <div class="batch-cards">
+            <div class="batch-card">
+                <h4>Batch #001</h4>
+                <p><strong>Location:</strong> Coastal Area A</p>
+                <p><strong>Date/Time:</strong> 2025-03-12 14:45</p>
+                <p><strong>Status:</strong> <span class="status">Non-restricted</span></p>
+            </div>
+            <div class="batch-card">
+                <h4>Batch #002</h4>
+                <p><strong>Location:</strong> Restricted Area B</p>
+                <p><strong>Date/Time:</strong> 2025-03-12 16:30</p>
+                <p><strong>Status:</strong> <span class="status restricted">Restricted</span></p>
+            </div>
+            <div class="batch-card">
+                <h4>Batch #003</h4>
+                <p><strong>Location:</strong> Coastal Area C</p>
+                <p><strong>Date/Time:</strong> 2025-03-13 09:10</p>
+                <p><strong>Status:</strong> <span class="status">Non-restricted</span></p>
+            </div>
+            <div class="batch-card">
+                <h4>Batch #004</h4>
+                <p><strong>Location:</strong> Restricted Area D</p>
+                <p><strong>Date/Time:</strong> 2025-03-13 12:25</p>
+                <p><strong>Status:</strong> <span class="status restricted">Restricted</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aquachain. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
