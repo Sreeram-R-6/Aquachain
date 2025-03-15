@@ -49,12 +49,6 @@
 						"internalType": "address",
 						"name": "fisherman",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "qrCodeURL",
-						"type": "string"
 					}
 				],
 				"name": "CatchLogged",
@@ -253,11 +247,6 @@
 						"internalType": "string",
 						"name": "approvalReason",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "qrCodeURL",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -359,30 +348,6 @@
 					{
 						"internalType": "string",
 						"name": "approvalReason",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "qrCodeURL",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_catchId",
-						"type": "uint256"
-					}
-				],
-				"name": "getCatchQRCode",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
 						"type": "string"
 					}
 				],
@@ -581,7 +546,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"sustainablefishing/catchverify2.sol": "SeafoodTracking"
+			"blockchain/Copy_sustainablefishing/catchverify.sol": "SeafoodTracking"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -595,12 +560,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"sustainablefishing/catchverify2.sol": {
-			"keccak256": "0x0f72b1075c8e0885737255e8d836fe8a85d8103465504f9195cc1d67c0a5e1fd",
+		"blockchain/Copy_sustainablefishing/catchverify.sol": {
+			"keccak256": "0x30f50c6b62a3635ad805d10dd32e6fe2f69593a966b79e7bb353a8ce4364913b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://068e5264d0d9f9ddf99c18ab0e577fcc3cea4d7d6ef24690a8b96f073b316d39",
-				"dweb:/ipfs/QmPWgZ87HTz2sxdvBwxvKirAfhUyFyey8sepo2p7EoVkDp"
+				"bzz-raw://fe8ef4657e68ba412aa014de0a497345ce9d7a15bd88cb7da5e5257edd985179",
+				"dweb:/ipfs/QmNYWTxtKNqHZwGXMRe9wjFRGk27DxHK3RdxcZ8oy3qD43"
 			]
 		}
 	},
