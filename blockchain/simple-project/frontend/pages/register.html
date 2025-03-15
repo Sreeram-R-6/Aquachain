@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Fisherman - AquaChain</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🐟 AquaChain</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="register.html" class="active">Register Fisherman</a></li>
+                <li><a href="log-catch.html">Log Catch</a></li>
+                <li><a href="sell-fish.html">Sell Fish</a></li>
+                <li><a href="storage.html">View Storage</a></li>
+                <li><a href="blockchain.html">Blockchain Explorer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Register as Fisherman</h1>
+            <div class="form-card">
+                <form id="fishermanForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="licenseId">License ID</label>
+                        <input type="text" id="licenseId" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="walletAddress">Wallet Address</label>
+                        <input type="text" id="walletAddress" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="button">Register</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="status" class="status-message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AquaChain - Sustainable Fishing Management</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html> 

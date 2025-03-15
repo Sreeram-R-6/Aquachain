@@ -1,0 +1,82 @@
+[
+  {
+    "type": "register-fisherman",
+    "data": {
+      "name": "John Smith",
+      "licenseId": "FL123456",
+      "address": "0x123456789abcdef"
+    },
+    "timestamp": 1742003128346
+  },
+  {
+    "type": "log-catch",
+    "data": {
+      "species": "Tuna",
+      "weight": 100,
+      "gpsLocation": "25.7617° N, 80.1918° W",
+      "address": "0x123456789abcdef"
+    },
+    "timestamp": 1742003128378
+  },
+  {
+    "type": "sell-fish",
+    "data": {
+      "catchId": 1,
+      "buyer": "0xabcdef123456",
+      "weight": 50,
+      "price": 1000,
+      "address": "0x123456789abcdef"
+    },
+    "timestamp": 1742003128395
+  },
+  {
+    "type": "register-fisherman",
+    "data": {
+      "name": "Sreeram",
+      "licenseId": "789789854652",
+      "address": "0x1eBcD8cF5F4822DdAB2D91c0aef3F93447F02a32"
+    },
+    "timestamp": 1742003500489
+  },
+  {
+    "type": "register-fisherman",
+    "data": {
+      "name": "Sreeram",
+      "licenseId": "789789854652",
+      "address": "0x1eBcD8cF5F4822DdAB2D91c0aef3F93447F02a32"
+    },
+    "timestamp": 1742003502352
+  },
+  {
+    "type": "log-catch",
+    "data": {
+      "species": "Tuna",
+      "weight": "200",
+      "gpsLocation": "29.5324° S, 137.4694° E)",
+      "address": null
+    },
+    "timestamp": 1742003503119
+  },
+  {
+    "type": "sell-fish",
+    "data": {
+      "catchId": "123125",
+      "buyer": "1111111111111111111",
+      "weight": "50",
+      "price": "50",
+      "address": null
+    },
+    "timestamp": 1742003531491
+  },
+  {
+    "type": "sell-fish",
+    "data": {
+      "catchId": "123125",
+      "buyer": "0x958d990914BAb20a0d83c41BE2F824Bc44756B9d",
+      "weight": "50",
+      "price": "50",
+      "address": null
+    },
+    "timestamp": 1742003669963
+  }
+]

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Explorer - AquaChain</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🐟 AquaChain</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="register.html">Register Fisherman</a></li>
+                <li><a href="log-catch.html">Log Catch</a></li>
+                <li><a href="sell-fish.html">Sell Fish</a></li>
+                <li><a href="storage.html">View Storage</a></li>
+                <li><a href="blockchain.html" class="active">Blockchain Explorer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blockchain-container">
+            <h1>Blockchain Explorer</h1>
+            
+            <div class="blockchain-info">
+                <div class="info-card">
+                    <h2>Network Info</h2>
+                    <div id="networkInfo">Loading...</div>
+                </div>
+
+                <div class="info-card">
+                    <h2>Latest Blocks</h2>
+                    <div id="latestBlocks">Loading...</div>
+                </div>
+
+                <div class="info-card">
+                    <h2>Contract State</h2>
+                    <div id="contractState">Loading...</div>
+                </div>
+
+                <div class="info-card">
+                    <h2>Recent Transactions</h2>
+                    <div id="recentTransactions">Loading...</div>
+                </div>
+            </div>
+
+            <div class="refresh-controls">
+                <button onclick="refreshBlockchainData()" class="button">Refresh Data</button>
+                <span id="lastUpdated"></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AquaChain - Sustainable Fishing Management</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="../js/blockchain.js"></script>
+</body>
+</html> 

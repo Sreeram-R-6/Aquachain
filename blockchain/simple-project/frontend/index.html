@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Frontend</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sustainable Fishing DApp</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Send Data to Blockchain</h1>
-    <form id="data-form">
-        <label for="data">Data:</label>
-        <input type="text" id="data" name="data" required>
-        <button type="submit">Send</button>
-    </form>
-    <div id="result"></div>
-    <script src="app.js"></script>
+    <header>
+        <nav>
+            <div class="logo">🐟 AquaChain</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/register.html">Register Fisherman</a></li>
+                <li><a href="pages/log-catch.html">Log Catch</a></li>
+                <li><a href="pages/sell-fish.html">Sell Fish</a></li>
+                <li><a href="pages/storage.html">View Storage</a></li>
+                <li><a href="pages/blockchain.html">Blockchain Explorer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Welcome to AquaChain</h1>
+            <p>Blockchain-powered sustainable fishing management system</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h2>Register as Fisherman</h2>
+                <p>Join our network of sustainable fishermen</p>
+                <a href="pages/register.html" class="button">Register Now</a>
+            </div>
+
+            <div class="feature-card">
+                <h2>Log Your Catch</h2>
+                <p>Record your fishing activities securely</p>
+                <a href="pages/log-catch.html" class="button">Log Catch</a>
+            </div>
+
+            <div class="feature-card">
+                <h2>Sell Your Fish</h2>
+                <p>Connect with buyers and sell your catch</p>
+                <a href="pages/sell-fish.html" class="button">Sell Fish</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AquaChain - Sustainable Fishing Management</p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

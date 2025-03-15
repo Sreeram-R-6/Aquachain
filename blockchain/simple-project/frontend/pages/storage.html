@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Storage - AquaChain</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🐟 AquaChain</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="register.html">Register Fisherman</a></li>
+                <li><a href="log-catch.html">Log Catch</a></li>
+                <li><a href="sell-fish.html">Sell Fish</a></li>
+                <li><a href="storage.html" class="active">View Storage</a></li>
+                <li><a href="blockchain.html">Blockchain Explorer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="storage-container">
+            <h1>Temporary Storage Data</h1>
+            <div class="storage-controls">
+                <div class="button-group">
+                    <button onclick="refreshStorage()" class="button">Refresh Data</button>
+                    <button onclick="syncToBlockchain()" class="button">Sync to Blockchain</button>
+                </div>
+                <div class="blockchain-status" id="blockchainStatus">
+                    Checking blockchain status...
+                </div>
+            </div>
+
+            <div class="storage-sections">
+                <div class="storage-section">
+                    <h2>Registered Fishermen</h2>
+                    <div id="fishermanData" class="data-container"></div>
+                </div>
+
+                <div class="storage-section">
+                    <h2>Logged Catches</h2>
+                    <div id="catchData" class="data-container"></div>
+                </div>
+
+                <div class="storage-section">
+                    <h2>Fish Sales</h2>
+                    <div id="saleData" class="data-container"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AquaChain - Sustainable Fishing Management</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="../js/storage.js"></script>
+</body>
+</html> 
